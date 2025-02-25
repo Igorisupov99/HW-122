@@ -23,7 +23,7 @@ return string.match(/\d{3}-[0-9]{3}-[0-9]{3} [0-9]{2}/g)
 
 // Зашифруй номера СНИЛС. Example: XXX-XXX-XXX 30.
 function hideAllSNILS(string) {
-
+return string.replace(/\d{3}-[0-9]{3}-[0-9]{3}/g, 'XXX-XXX-XXX')
 }
 
 
