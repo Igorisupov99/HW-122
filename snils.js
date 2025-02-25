@@ -17,7 +17,7 @@ function grabSNILS(string) {
 
 // Найди и верни все номера СНИЛС, что есть в строке.
 function grabAllSNILS(string) {
-
+return string.match(/\d{3}-[0-9]{3}-[0-9]{3} [0-9]{2}/g)
 }
 
 
