@@ -64,18 +64,18 @@ describe("hideAllSNILS", () => {
     });
 });
 
-// describe("formatSNILS", () => {
-//     it("formats any SNILS it finds", () => {
-//         let formattedSNILS = formatSNILS(
-//             "The numbers are 35080207494, 234.600.142.22, and 013--605--876 94"
-//         );
-//         expect(formattedSNILS).toEqual(
-//             "The numbers are 350-802-074 94, 234-600-142 22, and 013-605-876 94"
-//         );
-//     });
+describe("formatSNILS", () => {
+    it("formats any SNILS it finds", () => {
+        let formattedSNILS = formatSNILS(
+            "The numbers are 35080207494, 234.600.142.22, and 013--605--876 94"
+        );
+        expect(formattedSNILS).toEqual(
+            "The numbers are 350-802-074 94, 234-600-142 22, and 013-605-876 94"
+        );
+    });
 
-//     it("returns its input if it finds no SNILS", () => {
-//         let input = "The number is XXX-XXX-XXX 22";
-//         expect(formatSNILS(input)).toEqual(input);
-//     });
-// });
+    it("returns its input if it finds no SNILS", () => {
+        let input = "The number is XXX-XXX-XXX 22";
+        expect(formatSNILS(input)).toEqual(input);
+    });
+});
