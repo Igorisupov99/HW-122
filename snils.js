@@ -10,6 +10,8 @@ function hasSNILS(string) {
 
 // Найди и верни номер СНИЛС из строки.
 function grabSNILS(string) {
+    const str = string.match(/\d{3}-[0-9]{3}-[0-9]{3} [0-9]{2}/).join('')
+    return str ? str : ''
 }
 
 
